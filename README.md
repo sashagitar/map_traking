@@ -25,12 +25,6 @@
    pip install -r requirements.txt
    ```
 
-   Если файла нет, создайте его вручную:
-
-   ```bash
-   pip freeze > requirements.txt
-   ```
-
 3. **Запустите приложение:**
 
    ```bash
@@ -74,16 +68,6 @@
 
       Теперь приложение будет использовать базу данных MySQL, если в файле `.env` настроена переменная `DATABASE_URL` для подключения к MySQL. Если она не указана, по умолчанию будет использоваться SQLite.
 
-5. **Миграции базы данных (если используется SQLAlchemy)**
-
-   Если вы используете SQLAlchemy для управления базой данных, возможно, потребуется провести миграции для создания таблиц. Для этого выполните:
-
-   ```bash
-   flask db init
-   flask db migrate -m "Initial migration."
-   flask db upgrade
-   ```
-
 ## Технологии
 
 - **Flask:** Веб-фреймворк для Python.
@@ -91,6 +75,10 @@
 - **SQLite:** Система управления базами данных, используемая по умолчанию.
 - **Yandex Maps API:** Для отображения карт и работы с точками.
 
-## Автор
+## Мои контакты
 
-[Ваше имя]
+<a href="https://vk.com/hidden_by.the_devil">
+<img src="https://sun6-20.userapi.com/s/v1/ig2/xgv1nev3R0LQwj1ixmxgSuVZWK-_r7kh2VQeyFofgymTmF6Mi1YMaKS5Sf3hVqZIstdKGfHzEa3XxTWtay-NTgiD.jpg?size=50x50&amp;quality=95&amp;crop=352,256,1224,1224&amp;ava=1" alt="Александр">
+</a>
+
+Email: DAI.20@uni_dubna.ru
