@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Маршруты</title>
+  </head>
+  <body>
+    <h1>Маршруты</h1>
+    <form action="/add_route" method="post">
+      <input type="text" name="name" placeholder="Название маршрута" />
+      <button type="submit">Добавить маршрут</button>
+    </form>
+    <ul>
+      {% for route in routes %}
+      <li>
+        <a href="/route/{{ route.id }}">{{ route.name }}</a>
+        <form
+          action="/delete_route/{{ route.id }}"
+          method="post"
+          style="display: inline"
+        >
+          <button type="submit">Удалить</button>
+        </form>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
